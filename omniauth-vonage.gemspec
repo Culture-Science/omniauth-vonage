@@ -1,4 +1,4 @@
-require_relative "lib/omniauth/vonage/version"
+require_relative "lib/omniauth-vonage/version"
 
 Gem::Specification.new do |spec|
   spec.name = "omniauth-vonage"
@@ -27,4 +27,6 @@ Gem::Specification.new do |spec|
 
   # Runtime dependencies
   spec.add_dependency "thor", "~> 1.2"
+  spec.add_dependency 'omniauth', '~> 2.0'
+  spec.add_dependency 'omniauth-oauth2', '>= 1.4.0', '< 2.0'
 end
